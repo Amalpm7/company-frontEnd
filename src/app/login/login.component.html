@@ -1,4 +1,5 @@
 <div class= "card-center">
+    <h1>Company Login</h1>
     <mat-card class="example-card">
         <mat-card-content>
     <mat-tab-group mat-align-tabs="center">
@@ -6,74 +7,41 @@
             
                 <mat-form-field class="example-full-width" appearance="outline">
                   <mat-label>Email</mat-label>
-                  <input type="text" matInput placeholder="Ex. Pizza" >
+                  <input type="text" matInput placeholder="Ex. Pizza" name="email" [(ngModel)]="email">
                 </mat-form-field>
               
                 <mat-form-field class="example-full-width" appearance="outline">
                   <mat-label>Password</mat-label>
-                  <input type="text" matInput placeholder="Ex. It makes me feel...">
+                  <input type="text" matInput placeholder="Ex. It makes me feel..." name="password" [(ngModel)]="password">
                 </mat-form-field>
-                <button mat-raised-button color="warn">Login</button>
+                <button mat-raised-button color="warn"(click)="adminLogin()">Login</button>
               
         </mat-tab>
         <mat-tab label="Employee">
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Email</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
+                <input type="text" matInput placeholder="Ex. Pizza" name="email" [(ngModel)]="email">
               </mat-form-field>
             
               <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Password</mat-label>
-                <input type="text" matInput placeholder="Ex. It makes me feel...">
+                <input type="text" matInput placeholder="Ex. It makes me feel..." name="password" [(ngModel)]="password">
               </mat-form-field>
-              <button mat-raised-button color="warn">Login</button>
+              <button mat-raised-button color="warn" (click)="employLogin()">Login</button>
         </mat-tab>
         <mat-tab label="Security">
             <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Email</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
+                <input type="text" matInput placeholder="Ex. Pizza"name="email" [(ngModel)]="email" >
               </mat-form-field>
             
               <mat-form-field class="example-full-width" appearance="outline">
                 <mat-label>Password</mat-label>
-                <input type="text" matInput placeholder="Ex. It makes me feel...">
+                <input type="text" matInput placeholder="Ex. It makes me feel..." name="password" [(ngModel)]="password">
               </mat-form-field>
-              <button mat-raised-button color="warn">Login</button>
+              <button mat-raised-button color="warn"(click)="securityLogin()" >Login</button>
         </mat-tab>
-        <mat-tab label="SignUp"> 
-            <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Name</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Age</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Address</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Salary</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Date</mat-label>
-                <input type="date" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Phone</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Email</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-              <mat-form-field class="example-full-width" appearance="outline">
-                <mat-label>Password</mat-label>
-                <input type="text" matInput placeholder="Ex. Pizza" >
-              </mat-form-field>
-        </mat-tab>
+        
         
       </mat-tab-group>
     </mat-card-content>
