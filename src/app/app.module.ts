@@ -14,6 +14,7 @@ import { HttpClientModule } from "@angular/common/http";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const appRoutes:Routes=[
@@ -29,6 +30,7 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     AdminNavbarComponent,
+    AdminComponent,
     
   ],
   imports: [
