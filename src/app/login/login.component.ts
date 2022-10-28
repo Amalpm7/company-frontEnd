@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
    
     if (this.email=="admin" && this.password=="admin"){
      alert ("Login Successful")
-     this.myRouter.navigate(["/admindashboard"])
+     this.myRouter.navigate(["/addemployee"])
     }else{
     alert("Invalid Credentials")
   }
