@@ -9,6 +9,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,9 @@ import {MatInputModule} from '@angular/material/input';
     MatCardModule,
     MatButtonModule,
     MatTabsModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    HttpClientModule
    
   ],
   providers: [],
